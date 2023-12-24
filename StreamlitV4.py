@@ -6,8 +6,6 @@ import time
 st.set_page_config(page_title="DATA2İZDİVAÇ 2023",
                    page_icon=":smile:",
                    layout="wide")
-
-
 def get_model():
     model = joblib.load("model_train_all2.joblib")
     return model
@@ -24,18 +22,16 @@ a2.image("seda.PNG", width=600)
 
 def main():
     # Düğmeyi oluştur
-    play_button = tab_home.button("Arka Plan Müziğini Çal/Durdur")
+    #play_button = tab_home.button("Arka Plan Müziğini Çal/Durdur")
 
     # Müzik dosyasını okut
     audio_file = open("music.mp3", "rb").read()
 
     # Düğme tıklandığında müziği çal veya durdur
-    if play_button:
+    if audio_file:
         tab_home.audio(audio_file, format="audio/mp3", start_time=0)
     else:
         tab_home.audio(audio_file, format="audio/mp3", start_time=0)
-
-
 if __name__ == "__main__":
     main()
 
