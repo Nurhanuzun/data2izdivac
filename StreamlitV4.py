@@ -17,7 +17,7 @@ dforig = pd.read_excel("veriler.xlsx")
 tab_home, tab_oneri = st.tabs(["Hoşgeldiniz", "Aşk Testi"])
 
 a1,a2,a3,a4= tab_home.columns(4)
-a2.image("seda.PNG", width=600)
+a2.image("seda.PNG", width=600,height=500)
 
 
 def main():
