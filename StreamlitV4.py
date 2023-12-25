@@ -156,10 +156,10 @@ def main():
         prediction = model.predict(user_input)
         # Display result based on the prediction
         if prediction == 0:
-            tab_oneri.success(f"Tahmin edilen aşk uyumu: {prediction} Başarılı! ")
+            tab_oneri.success(f"Tahmin edilen aşk uyumu: {prediction} Ayrılma Olasılığı Düşük! ")
             tab_oneri.balloons()
         else:
-            tab_oneri.error(f"Tahmin edilen aşk uyumu: {prediction} Başarısız😢.")
+            tab_oneri.error(f"Tahmin edilen aşk uyumu: {prediction} Ayrılma Olasılığı Yüksek!😢.")
             tab_oneri.snow()
 
 
