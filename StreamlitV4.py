@@ -36,7 +36,7 @@ if __name__ == "__main__":
     main()
 
 c1, c2, c3 = tab_oneri.columns(3)
-c2.header(":red[❤️AŞK UYUMU TAHMİNİ❤️]")
+c2.header(":red[❤️AŞK TESTİ❤️]")
 
 tab_oneri.markdown("**Lütfen burada filtreleyin:**")
 
